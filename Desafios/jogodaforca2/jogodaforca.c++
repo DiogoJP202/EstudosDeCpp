@@ -2,20 +2,18 @@
 using namespace std;
 
 int main(){
-    string palavras[2];
-    char palavra1[] = {'b','a','t','a','t','a'};
+    char palavra1[]= {'b','a','t','a','t','a'};
     char palavra2[]= {'a','b','a','c','a','t','e'};
+    string palavras[]={palavra1, palavra2};
     int vidas = 10; //numero de vidas caso o usuario erre uma letra
-    int num;
+    int chave;
     int contador;
-    palavras[0] = palavra1;
-    palavras[1] = palavra2;
-    cout << "O jogo comecou!" << endl << "Escolha um dos numeros a seguir para comecar: [1,2]";
-    cin >> num;
+    cout << "O jogo comecou!" << endl << "Escolha um dos numeros a seguir para comecar: (1,2)" << endl;
+    cin >> chave;
+    for (char resposta; resposta != palavras[chave];){
+    for (int x; x < sizeof(palavras[chave])/4; x++) {
+        for (char letra; )
 
-    for(int contador; contador < sizeof(palavras[num])/4; contador++ ){
-        if(num == 1){
-            
-        }
-        }
+    }
+    }
 }
